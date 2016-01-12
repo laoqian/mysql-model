@@ -13,11 +13,16 @@ var vip  =new model(pool);
 
 vip.data['id'] = 111;
 vip.data['qq'] = 111;
-vip.data['name'] = 111;
+vip.data['name'] = '1111111111';
 vip.data['pwd'] = 111;
 
 
-vip.validation();
+vip.validation().then(()=>{
+  debug('成功啦。你真厉害')
+},(err)=>{
+  debug(err);
+});
+
 
 
 
