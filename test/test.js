@@ -15,6 +15,7 @@ vip.data['id'] = 111;
 vip.data['qq'] = 111;
 vip.data['name'] = '1111111111';
 vip.data['pwd'] = 111;
+vip.data['sn'] = '222';
 
 
 vip.validation().then(()=>{
