@@ -5,7 +5,7 @@
 ###如何创建model
 
 ```js
-//vip_model.js
+//vip-model.js
 var model = require('model');
 
 function  new_model (pool){
@@ -58,9 +58,9 @@ exports = module.exports = new_model;
 
 ```
 
-###validate_rule 添加新的规则
+###validate-rule 添加新的规则
 
-在 validate_rule.js 中按照如下方式
+在 validate-rule.js 中按照如下方式
 
 ```js
 exports['rule_name'] = function (req,next){

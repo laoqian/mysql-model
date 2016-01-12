@@ -2,8 +2,8 @@
  * Created by gg on 2016/1/10.
  */
 
-var createMysqlPool = require('./lib/mysql_pool');
-var model = require('./vip_model');
+var createMysqlPool = require('./../addons/mysql_pool');
+var model = require('./vip-model');
 var debug = require('debug')('test');
 
 var pool = createMysqlPool();

@@ -2,7 +2,7 @@
  * Created by gg on 2016/1/10.
  */
 
-var model = require('./lib/model');
+var model = require('./../lib/model');
 
 function vip_model(pool){
   var vip_model = new model(pool);

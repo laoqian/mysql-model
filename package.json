@@ -2,10 +2,9 @@
   "name": "mysql-model",
   "version": "0.1.0",
   "description": "在mysql上增加创建模型",
-  "main": "model.js",
+  "main": "./lib/model.js",
   "scripts": {
     "lint": "eslint lib",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG=* & node test.js"
   },
   "keywords": [
