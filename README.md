@@ -8,10 +8,13 @@
 
 在 validate_rule.js 中按照如下方式
 
+```js
 exports['rule_name'] = function (req,next){
     //验证代码
 
     next(); //此处注意，要在函数的出口显示的调用next，如果有多个出口所有出口都要调用，不然会验证出错。
 }
+
+```
 
 

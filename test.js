@@ -22,7 +22,7 @@ vip_model.rules['qq'] =[
   ['equal','两次不相等','pwd']
 ];
 
-vip_model.data['id'] = 1;
+vip_model.data['id'] = 2;
 vip_model.data['name'] ='123456';
 vip_model.data['account'] =1;
 vip_model.data['pwd'] =2;
