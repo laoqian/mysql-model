@@ -14,6 +14,8 @@ function  new_model (pool){
     my_model.table = 'eb_vip';
     vip_model.rules['id'] =[['unique','id重复','none']];
     ....
+
+    return vip_model;
 }
 exports = module.exports = new_model;
 ```
