@@ -3,7 +3,7 @@
 
 
 
-#validate_rule 添加方法
+##validate_rule 添加方法
 
 
 在 validate_rule.js 中按照如下方式
