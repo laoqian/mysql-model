@@ -18,13 +18,14 @@ vip.data['pwd'] = 111;
 vip.data['sn'] = '222';
 
 
-vip.validation().then(()=>{
-  debug('成功啦。你真厉害')
-},(err)=>{
-  debug(err);
-});
 
 
+
+  vip.validation().then(()=>{
+    debug('成功啦。你真厉害')
+  },(err)=>{
+    debug(err);
+  });
 
 
 

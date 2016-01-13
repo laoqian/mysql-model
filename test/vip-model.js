@@ -8,10 +8,17 @@ function vip_model(pool){
   var vip_model = new model(pool);
 
   vip_model.table = 'eb_vip';
-  vip_model.rules['id'] =[['unique','id重复','none']];
-  vip_model.rules['sn'] =[['type','sn类型不正确','int']];
-  vip_model.rules['name'] =[['unique','用户名重复','none'], ['length' ,'name长度不正确！','4,10']];
-  vip_model.rules['qq'] =[['require','qq号码是必须的','none'], ['equal','qq和pwd不相等','pwd']];
+
+  vip_model.rules = { id: ['unique', 'id重复'],
+                      sn:['type', 'sn类型不正确', 'int'],
+                      name:[['unique', '用户名重复'], ['length', 'name长度不正确！', '4,10']],
+                      qq:[['require', 'qq号码是必须的'], ['equal', 'qq和pwd不相等', 'pwd']]
+                    };
+
+  vip_model.auto = {
+    id:new_id
+  };
+
 
   return vip_model;
 }
