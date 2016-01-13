@@ -19,11 +19,11 @@ vip.data['sn'] = '222';
 
 
 
+vip.where('id =2').page('10,22').order('111').select();
 
-
-vip.validation().then(()=>{
-  debug('成功啦。你真厉害')
-},(err)=>{
-  debug(err);
-});
+//vip.validation().then(()=>{
+//  debug('成功啦。你真厉害')
+//},(err)=>{
+//  debug(err);
+//});
 
