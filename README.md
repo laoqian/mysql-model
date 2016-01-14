@@ -30,31 +30,21 @@ exports = module.exports = new_model;
 
    //add data
     vip.data['id']  = 1;
-   // validation
-    vip.validation().then(()=>{
-        //验证成功
-        ...
-    },(err)=>{
-        //验证失败
-        ...
-    });
+
     //保存数据库，会自动验证
-    vip.add().then(()=>{
-         //添加成功
-         ...
-     },(err)=>{
-         //添加失败
-         ...
-     });
+    vip.add((result)=>{
+        if(result.status==ture){
+            //成功
+        }
+    });
 
    //根据post参数创建数据会自动验证
-    vip.create(post).then(()=>{
-         //添加成功
-         ...
-     },(err)=>{
-         //添加失败
-         ...
-     });
+    vip.create(post，(result)=>{
+                            if(result.status==ture){
+                                //成功
+                            }
+                        });
+
 
 ```
 
@@ -69,6 +59,13 @@ exports['rule_name'] = function (req,next){
     next(); //此处注意，要在函数的出口显示的调用next，如果有多个出口所有出口都要调用，不然会验证出错。
 }
 
+```
+
+###增、删、查、改支持链式操作.
+```js
+vip.where('id=1').select((result)=>{
+    ....
+});
 ```
 
 
