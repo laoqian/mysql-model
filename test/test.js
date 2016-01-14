@@ -26,6 +26,4 @@ vip.data['comm'] = '这是一个栏目的测试，谢谢使用';
 
 
 
-vip.page('10,1').order('id desc').select((result)=>{
-  debug(result.rows);
-});
+vip.where('id=100').delete();
