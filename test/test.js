@@ -11,19 +11,20 @@ var pool = createMysqlPool();
 var vip  =new model(pool);
 
 
-vip.data['id'] = 111;
-vip.data['qq'] = 111;
-vip.data['name'] = '1111111111';
-vip.data['pwd'] = 111;
-vip.data['sn'] = '222';
+vip.data['name'] ='我的栏目';
+vip.data['comm'] = '这是一个栏目的测试，谢谢使用';
 
 
 
-vip.where('id =2').page('10,22').order('111').select();
+vip.add();
 
-//vip.validation().then(()=>{
-//  debug('成功啦。你真厉害')
-//},(err)=>{
-//  debug(err);
-//});
+
+vip.data['name'] = '我只是修改';
+vip.where('id=21').update();
+
+vip.data['name'] = '我只是修改';
+
+vip.update();
+
+
 

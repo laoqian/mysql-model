@@ -7,13 +7,12 @@ var model = require('./../lib/model');
 function vip_model(pool){
   model.call(this,pool);
 
-  this.table = 'eb_vip';
+  this.table = 'eb_category';
 
-  this.rules = { id: ['unique', 'id重复'],
-                      sn:['type', 'sn类型不正确', 'int'],
-                      name:[['unique', '用户名重复'], ['length', 'name长度不正确！', '4,10']],
-                      qq:[['require', 'qq号码是必须的'], ['equal', 'qq和pwd不相等', 'pwd']]
-                    };
+  this.rules = {
+                  name:[['require', '栏目名字重复'], ['length', '栏目名长度不正确！', '3,20']],
+                  comm:[['require', '说明是必须的'], ['length', '说明长度不正确', '10,40']]
+               };
 
   this.auto = {
     id:this.new_id
