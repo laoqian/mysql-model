@@ -16,15 +16,16 @@ vip.data['comm'] = '这是一个栏目的测试，谢谢使用';
 
 
 
-vip.add();
-
-
-vip.data['name'] = '我只是修改';
-vip.where('id=21').update();
-
-vip.data['name'] = '我只是修改';
-
-vip.update();
+//vip.add();
+//var i = 0
+//setInterval(()=>{
+//  vip.data['name'] ='我的栏目';
+//  vip.data['comm'] = '这是一个栏目的测试，谢谢使用';
+//  vip.add();
+//},100);
 
 
 
+vip.page('10,1').order('id desc').select((result)=>{
+  debug(result.rows);
+});
