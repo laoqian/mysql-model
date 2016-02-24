@@ -14,9 +14,12 @@
   "author": "laoqian",
   "license": "ISC",
   "dependencies": {
+    "async": "^1.5.2",
     "babel-core": "^6.4.0",
+    "babel-polyfill": "^6.5.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-3": "^6.3.13",
+    "babel-register": "^6.5.2",
     "mysql": "^2.10.0"
   },
   "devDependencies": {
